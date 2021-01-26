@@ -24,38 +24,6 @@ interface IAppState {
 class App extends React.Component<{}, IAppState> {
 
 
-/* const [sum, setSum] = useState<any>(0); */
-/* const [products, setProducts] = useState<IProduct[]>([]); */
-/* const [cart, setCart] = useState<ICartItem[]>([]);
-const [total, setTotal] = useState<any>([]); */
-
-
-//Add Product to cart
-/* function add(products: IProduct) {
-  let sum = 0;
-  let find = cart.find(x => products.id === x.cart.id)
-  let myProducts: ICart = {cart: products};
-  if(find === undefined) {
-    setCart([...cart, myProducts]);
-    setTotal([...total, products.price])
-    for (let number of total){
-      sum = sum + number;
-      setSum(sum);
-    }  
-  } 
-
-} */
-
-/* function add(products: IProduct) {
-
-
- console.log("added")
-
-}
-
-const cartItemAmount = [cart.length]; */
-
-
 
 
 constructor(props: any){
