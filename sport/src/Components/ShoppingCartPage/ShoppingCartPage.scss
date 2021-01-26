@@ -1,0 +1,107 @@
+.shoppingCartPage {
+    margin: auto;
+    width: 1190px;
+    min-height: 100vh;
+        .cartTitleContainer {
+            margin: 0;
+            h2{
+                font-size: 28px;
+                font-weight: bold;
+                color: white;
+                padding: 20px;
+                margin: auto;
+                text-align: center;
+            }
+        }
+        .cartContainer {
+            position: relative;
+            .cartItemContainer{
+                ul{
+                    margin: auto;
+
+                    display: flex;
+                    flex-direction: column;
+                    width: 480px;
+                        .cartItemProduct {
+                            position: relative;
+                            margin: auto;
+                            margin-top: 10px;
+                            width: 90%;
+                            height: 30px;
+                            background-color: grey;
+                            border-radius: 6px;
+                            display: flex;
+                            align-items:  center;
+                            padding: 5px 10px;
+                                    .cartItemName {
+                                        font-size: 12px;
+                                        left: 10px;
+                                        margin: 0;                                      
+                                    }
+                                    .cartItemPrice {
+                                        position: absolute;
+                                        font-size: 10px;
+                                        right: 10px;
+                                    }
+                                    .quantityCartCointainer {
+                                        position: absolute;
+                                        right: 60px;
+                                        height: 20px;
+                                        width: 60px;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        .quantityCartBtn {
+                                            height: 15px;
+                                            width: 15px;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            span {
+                                                font-size: 14px;
+                                            }
+                                        }
+                                        .quantityCartAmount {
+                                            background-color: white;
+                                            border: 0.1px solid black;
+                                            width: 20px;
+                                            height: 20px;
+                                            border-radius: 2px;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                        }
+                                    }  
+                        }
+                        .cartItemProduct:last-child {
+                            margin-bottom: 10px;
+                        }
+                }
+            }
+            .cartInfoContainer{
+                position: absolute;
+                width: 140px;
+                height: auto;
+                background-color: grey;
+                right: 0;
+                top: 10px;
+                border-radius: 6px;
+                p{
+                    margin: 10px;
+                }
+            }
+        }
+        .shoppingCheckoutBtn {
+            display: block;
+            opacity: 1;
+            width: 250px;
+            height: 35px;
+            margin: auto;
+            display: block;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            font-size: 12px;
+            font-weight: bolder;
+        }
+}

@@ -1,0 +1,32 @@
+.homePage {
+    display: flex;
+    height: 100vh;
+    
+.homePageCenterContent {
+    display: flex;
+    flex-direction: column;
+    
+    margin: auto;
+    width: 500px;
+    .homePageTitle{
+        text-align: center;
+        color: white;
+        font-size: 48px;
+        font-weight: bolder;
+    }
+    .homePageCenterButtonContainer{
+        margin: auto;
+        button{
+            font-size: 24px;
+            font-weight: bold;
+            width: 240px;
+            height: 56px;
+            padding: 10px;
+            border: none;
+            color: white;
+            box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 6px;
+        }
+    }
+}
+}

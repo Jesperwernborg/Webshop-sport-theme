@@ -1,0 +1,138 @@
+nav {
+  position:fixed;
+  z-index: 1000;
+  height: auto;
+  width: 100%;
+  .navContent {
+    transition: 0.3s;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 100px 0px 100px;
+    height: 80px;
+    .logo {
+      padding: 0 20px;
+      margin-top: auto;
+      margin-bottom: auto;
+      color: white;
+      font-size: 50px;
+      font-weight: bold;
+      cursor: pointer;
+      .LogoLink{
+        color: white;
+        text-decoration: none;
+      }
+      
+      
+    }
+    .navLinks {
+      float: right;
+      display: flex;
+      .navLink {
+        margin: auto;
+        padding: 0px 20px;
+        color: white;
+        .navItem {
+          border: none;
+          color: white;
+          box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.25);
+          border-radius: 6px;
+        }
+        .searchBtnContainer:hover input {
+          width: 160px;
+          border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            padding: 0 6px;
+        }
+        .searchBtnContainer:hover button {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+          }
+        .searchBtnContainer {
+          position: relative;
+          display: flex;
+          transition: 1s;
+          width: auto;
+          padding: 6px;
+          height: 23px;
+
+          input {
+            height: auto;
+            width: 0;
+            transition:  1.3s;
+            border: none;
+           
+            border-radius: 6px;
+            padding: 0 ;
+
+            
+          }
+
+          button {
+            position: relative;
+            transition: 1.6s;
+            display: block;
+            width: 23px;
+            height: auto;
+            border: none;
+            border-radius: 6px;
+            padding: 0;
+            background-color: none;
+          }
+          i{
+              color: white;
+              transition: 0.3s;
+          }
+          i:hover {
+            transform: translateY(-1px);
+            opacity: 0.7;
+          }
+        }
+        .navLinkProducts {
+          font-size: 20px;
+          font-weight: bold;
+          padding: 6px 50px;
+        }
+        .shoppingCartLink {
+          height: 35px;
+          width: 35px;
+          position: relative;
+
+          .fa-shopping-cart {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.navContent{
+  background-color: #2d2c2c;
+  padding: 8px 100px 8px 100px;
+}
+.cartAmountSign{
+  position: absolute;
+  border-radius: 50%;
+  
+  background: #fff;
+  border: 2px solid #FB6E53;
+  color: #666;
+  text-align: center;
+  font-size: 10px;
+  font-weight: bolder;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -12px;
+  right: -12px;
+
+    p{
+
+      margin: 0;
+      padding: 0;
+    }
+
+}
