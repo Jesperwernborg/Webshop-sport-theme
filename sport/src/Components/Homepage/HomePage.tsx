@@ -1,24 +1,18 @@
 import React from "react";
-
 import "./HomePage.scss";
 
-
-
 export default function Navbar() {
-
-
-
-    return(
+    return (
         <React.Fragment>
             <div className="homePage">
                 <div className="homePageCenterContent">
                     <h1 className="homePageTitle t-shadow">THE BEST SPORT SITE</h1>
                     <div className="homePageCenterButtonContainer ">
-                        <button className="bg-orange standardButton">CREATE</button>
+                        <a href="/products"><button className="bg-orange standardButton">PRODUCTS</button></a>
                     </div>
                 </div>
             </div>
-            
+
         </React.Fragment>
     )
 }

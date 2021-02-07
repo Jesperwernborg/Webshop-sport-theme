@@ -1,4 +1,4 @@
-import IProduct  from "../ProductsPage/IProduct";
+import IProduct from "../ProductsPage/IProduct";
 
 export interface ICartItem {
     product: IProduct;

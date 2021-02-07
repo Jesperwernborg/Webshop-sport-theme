@@ -5,20 +5,20 @@ import './CartItem.scss'
 export interface CartItemProps {
     cartItem: ICartItem;
     onRemove(cartItem: ICartItem): void;
-    onUpdateQuantity(cartItem: ICartItem): void;   
+    onUpdateQuantity(cartItem: ICartItem): void;
 }
 
 
 class CartItem extends React.Component<CartItemProps, {}> {
 
-    handleRemove(e: React.MouseEvent<HTMLElement>){
+    handleRemove(e: React.MouseEvent<HTMLElement>) {
         this.props.onRemove(this.props.cartItem);
     }
 
-    handleUpdateQuantity(e: React.MouseEvent<HTMLElement>, num: number){
+    handleUpdateQuantity(e: React.MouseEvent<HTMLElement>, num: number) {
         let newQuantity: number = this.props.cartItem.quantity + num;
-        if(newQuantity <= 0){
-            newQuantity = 1;   
+        if (newQuantity <= 0) {
+            newQuantity = 1;
         }
         const newTotal: number = this.props.cartItem.product.price * newQuantity;
         const updatedCartItem: ICartItem = {
@@ -28,11 +28,11 @@ class CartItem extends React.Component<CartItemProps, {}> {
         }
         this.props.onUpdateQuantity(updatedCartItem);
     }
-    
 
 
-    render() { 
-        return(
+
+    render() {
+        return (
             <li className="cartItemProduct">
                 <p className="cartItemName">{this.props.cartItem.product.name}</p>
                 <div className="quantityCartCointainer">
@@ -40,13 +40,13 @@ class CartItem extends React.Component<CartItemProps, {}> {
                     <span className="quantityCartAmount">{this.props.cartItem.quantity}</span>
                     <button className="quantityCartBtn increaseBtn"><span onClick={(e) => this.handleUpdateQuantity(e, 1)}>+</span></button>
                     <div className="cart-remove">
-                        <button onClick={this.handleRemove.bind(this)} className="shop-btn movie-shop-button">Remove</button>
+                        <span className="cart-removebtn" onClick={this.handleRemove.bind(this)}><i className="fas fa-trash"></i></span>
                     </div>
                 </div>
-                <p className="cartItemPrice ">{this.props.cartItem.product.price}</p>
+                <p className="cartItemPrice">{this.props.cartItem.product.price}</p>
             </li>
         )
     }
- }
+}
 
- export default CartItem;
+export default CartItem;

@@ -1,0 +1,24 @@
+.cartItemProduct {
+  position: relative;
+  .quantityCartCointainer {
+    .decreaseBtn {
+      color: red;
+    }
+    .quantityCartAmount {
+      padding: 2px 4px;
+      margin: 0 4px;
+    }
+    .increaseBtn {
+      color: green;
+    }
+    .cart-removebtn {
+      border-radius: 6px;
+      border: none;
+      margin-left: 10px;
+      color: red;
+    }
+  }
+  .cartItemPrice {
+    font-weight: bolder;
+  }
+}

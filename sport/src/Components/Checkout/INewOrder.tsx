@@ -1,3 +1,4 @@
+import { INewOrder_Detail } from "./INewOrder_Detail";
 
 
 export interface INewOrder {
@@ -7,4 +8,5 @@ export interface INewOrder {
     paymentMethod: string;
     totalPrice: number;
     status: number;
+    order_Details: INewOrder_Detail[];
 }

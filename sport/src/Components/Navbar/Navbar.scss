@@ -1,5 +1,5 @@
 nav {
-  position:fixed;
+  position: fixed;
   z-index: 1000;
   height: auto;
   width: 100%;
@@ -18,12 +18,10 @@ nav {
       font-size: 50px;
       font-weight: bold;
       cursor: pointer;
-      .LogoLink{
+      .LogoLink {
         color: white;
         text-decoration: none;
       }
-      
-      
     }
     .navLinks {
       float: right;
@@ -41,13 +39,13 @@ nav {
         .searchBtnContainer:hover input {
           width: 160px;
           border-top-right-radius: 0;
-            border-bottom-right-radius: 0;
-            padding: 0 6px;
+          border-bottom-right-radius: 0;
+          padding: 0 6px;
         }
         .searchBtnContainer:hover button {
-            border-top-left-radius: 0;
-            border-bottom-left-radius: 0;
-          }
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+        }
         .searchBtnContainer {
           position: relative;
           display: flex;
@@ -59,13 +57,11 @@ nav {
           input {
             height: auto;
             width: 0;
-            transition:  1.3s;
+            transition: 1.3s;
             border: none;
-           
-            border-radius: 6px;
-            padding: 0 ;
 
-            
+            border-radius: 6px;
+            padding: 0;
           }
 
           button {
@@ -79,9 +75,9 @@ nav {
             padding: 0;
             background-color: none;
           }
-          i{
-              color: white;
-              transition: 0.3s;
+          i {
+            color: white;
+            transition: 0.3s;
           }
           i:hover {
             transform: translateY(-1px);
@@ -107,16 +103,16 @@ nav {
   }
 }
 
-.navContent{
+.navContent {
   background-color: #2d2c2c;
   padding: 8px 100px 8px 100px;
 }
-.cartAmountSign{
+.cartAmountSign {
   position: absolute;
   border-radius: 50%;
-  
+
   background: #fff;
-  border: 2px solid #FB6E53;
+  border: 2px solid #fb6e53;
   color: #666;
   text-align: center;
   font-size: 10px;
@@ -129,10 +125,8 @@ nav {
   top: -12px;
   right: -12px;
 
-    p{
-
-      margin: 0;
-      padding: 0;
-    }
-
+  p {
+    margin: 0;
+    padding: 0;
+  }
 }

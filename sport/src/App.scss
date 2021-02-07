@@ -1,45 +1,56 @@
-
 .App {
-    box-sizing: border-box;
-    width: 100%;
-    min-height: 100vh;
-    height: 100%;
-    background-color:  #1F3439;
-    background: linear-gradient(#343d3f 25%,#1F3439 75%);
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background-color: #1f3439;
+  background: linear-gradient(#343d3f 25%, #1f3439 75%);
 }
 .navBlocker {
-    height: 144px;
+  height: 144px;
 }
 
 //Background-Colors
 .bg-orange {
-    background: #FB6E53;
+  background: #fb6e53;
 }
 //Text-Colors
 .text-orange {
-    color: #FB6E53;
+  color: #fb6e53;
 }
-.standardButton{
-    cursor: pointer;
-    outline: 0;
-    transition: 0s;
+.standardButton {
+  cursor: pointer;
+  outline: 0;
+  transition: 0s;
 }
 .standardButton:hover {
-    opacity: 0.8;
-    
+  opacity: 0.8;
 }
 input {
-    outline: 0;
+  outline: 0;
 }
 .standardButton:active {
-    box-shadow: 0 5px rgba(0, 0, 0, 0.25);
-    transform: translateY(-6px);
-    transition: 0.1s ;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.25);
+  transform: translateY(-6px);
+  transition: 0.1s;
 }
-.t-shadow {text-shadow: 3px 5px 4px rgba(0, 0, 0, 0.25);}
+.t-shadow {
+  text-shadow: 3px 5px 4px rgba(0, 0, 0, 0.25);
+}
 
 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.link {
+  text-decoration: none;
+  color: white;
+}
+.backBtnCheckout {
+  margin: auto;
+  margin-top: 20px;
+  background-color: grey;
+  padding: 6px 10px;
+  border-radius: 6px;
 }

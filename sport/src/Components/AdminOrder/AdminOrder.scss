@@ -1,0 +1,17 @@
+.adminOrderItem {
+  margin: auto;
+  width: 1000px;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 6px;
+  .adminOrderItemText {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .adminOrderItemCol {
+    margin-right: 30px;
+  }
+}

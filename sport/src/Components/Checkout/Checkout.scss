@@ -1,0 +1,48 @@
+.checkout {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h2 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+  }
+  .backBtnCheckout {
+    margin: auto;
+    margin-top: 20px;
+    background-color: grey;
+    padding: 6px 10px;
+    border-radius: 6px;
+  }
+  .checkout-wrapper {
+    margin: auto;
+    text-align: center;
+    color: white;
+    h5 {
+      font-size: 20px;
+      text-decoration: underline;
+    }
+  }
+  form {
+    height: 100px;
+    position: relative;
+    .checkoutBtn {
+      bottom: 0;
+      position: absolute;
+      margin: auto;
+      display: block;
+      width: 100%;
+      outline: 0;
+      display: block;
+      height: auto;
+      border: none;
+      border-radius: 6px;
+      padding: 6px 6px;
+      color: white;
+      font-weight: bolder;
+      font-size: 14px;
+    }
+  }
+}
